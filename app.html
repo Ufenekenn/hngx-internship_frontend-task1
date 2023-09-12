@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>HNG Stage_1</title>
+</head>
+
+<body>
+    <main class="profileCard">
+        <section class="generalContent">
+            <figure class="contentContainer">
+                <div class="imgContainer">
+                    <img src="./resourses/WhatsApp Image 2023-09-11 at 11.34.42.jpg" alt="OgaKenn" data-testid="slackDisplayImage" />
+                </div>
+            </figure>
+            <figcaption class="desc">
+                <h1 class="title" data-testid="slackUserName">OgaKenn</h1>
+                <h3 data-testid="currentDayOfTheWeek">T</h3>
+                <h3 data-testid="currentUTCTime">10.00am</h3>
+                <h3 data-testid="myTrack">Frontend</h3>
+                <a href="https://github.com/Ufenekenn/hngx-internship_frontend-task1.git" data-testid="githubURL" target="_blank">
+                    <span data-testid="githubURL" class="gitIcon"><i class="ri-github-fill"></i></span>
+                </a>
+            </figcaption>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const days = [
+                "Sunday",
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+            ];
+
+            let currentDate = new Date();
+            let dayName = days[currentDate.getDay()];
+            document.querySelector(
+                '[data-testid="currentDayOfTheWeek"]'
+            ).textContent = dayName;
+
+            let utcTime = currentDate.toISOString().slice(11, 19) + " UTC";
+            document.querySelector('[data-testid="currentUTCTime"]').textContent =
+                utcTime;
+        });
+    </script>
+</body>
+
+</html>

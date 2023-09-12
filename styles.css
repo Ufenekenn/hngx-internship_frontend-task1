@@ -1,0 +1,190 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    width: 60%;
+    height: 100vh;
+    background-image: url(resourses/th\ \(3\).jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+
+}
+
+.profileCard {
+    width: 35rem;
+    height: 20rem;
+    border-radius: 15px;
+    background-color: rgb(18, 54, 161);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.generalContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 2rem 0;
+}
+
+.contentContainer {
+    margin-right: 2rem;
+}
+
+.imgContainer {
+    width: 150px;
+    height: 150px;
+    border: 2px solid rgb(52, 155, 143);
+    border-radius: 50%;
+    padding: 0.4rem;
+}
+
+.imgContainer img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.desc {
+    background-color: rgb(199, 123, 25);
+    width: 20rem;
+    height: 10rem;
+    border-radius: 15px;
+
+    padding: 0.5rem 1rem;
+}
+
+.desc h1,
+h3 {
+    font-size: 15px;
+    margin: 0.3rem 0;
+    color: white;
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+.gitIcon {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+@media screen and (max-width:475px) {
+
+    .profileCard {
+        width: 22rem;
+        height: 25rem;
+        border-radius: 15px;
+        background-color: aliceblue;
+        padding-top: 2rem;
+        box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .desc {
+        background-color: rgb(0, 140, 255);
+        width: 20rem;
+        height: 10rem;
+        border-radius: 15px;
+
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width:393px) {
+
+    .profileCard {
+        width: 22rem;
+        height: 25rem;
+        border-radius: 15px;
+        background-color: aliceblue;
+        padding-top: 2rem;
+        box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .desc {
+        background-color: rgb(0, 140, 255);
+        width: 20rem;
+        height: 10rem;
+        border-radius: 15px;
+
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width:390px) {
+
+    .profileCard {
+        width: 22rem;
+        height: 25rem;
+        border-radius: 15px;
+        background-color: aliceblue;
+        padding-top: 2rem;
+        box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .desc {
+        background-color: rgb(0, 140, 255);
+        width: 20rem;
+        height: 10rem;
+        border-radius: 15px;
+
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width:360px) {
+
+    .profileCard {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 15px;
+        background-color: rgb(6, 52, 91);
+        padding-top: 2rem;
+        box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .desc {
+        background-color: rgb(26, 173, 53);
+        width: 20rem;
+        height: 10rem;
+        border-radius: 15px;
+
+        padding: 0.5rem 1rem;
+        margin-top: 2rem;
+    }
+
+}
